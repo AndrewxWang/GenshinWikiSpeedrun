@@ -1,0 +1,100 @@
+body {
+    background-image: url("images/background.jpg");
+    min-height: 100%;
+    min-width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: scroll;
+    touch-action: none;
+    width: 100%;
+    z-index: 0;
+}
+
+* {
+    font-family: 'genshin';
+    font-size: 2.5vh;
+    overflow: hidden;
+
+    text-align: center;
+    top: 0;
+}
+
+a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+    transition: 0.1s all;
+    visibility: hidden;
+}
+
+a:hover {
+    color: #aea5ff;
+    text-decoration: underline;
+}
+
+button {
+    border: none;
+    background-color: lightgray;
+    border-bottom: 0.5vh solid #28223d;
+    transition: all .05s;
+}
+
+button:hover {
+    background-color: rgb(183, 183, 183);
+    cursor: pointer;
+    transform: scale(1.015);
+}
+
+h1 {
+    font-size: 3.5vh;
+    font-weight: lighter;
+    text-align: left;
+    margin-left: 4.5vh;
+}
+
+p {
+    display: block;
+    text-align: center;
+}
+
+#btnDiv {
+    padding: 2vh 15vh;
+    text-align: center;
+    display: inline-block;
+    text-align: center;
+}
+
+#randomizer {
+    color: white;
+    background-color: #16161F;
+    transform: translateY(17.5vh);
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+img {
+    margin-top: 6.4vh;
+    width: 30%;
+    left: 10.5vh;
+    position: absolute;
+
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+}
+
+#footer {
+    background: transparent;
+    color: transparent;
+    margin: 0;
+    border-style: none;
+    height: 50vh;
+}
+
+
+@font-face {
+    font-family: genshin;
+    src: url(fonts/genshin.woff);
+}
