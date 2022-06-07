@@ -4,9 +4,6 @@ var j = 0;
 var randomNum = Math.floor(Math.random() * (list.length - 1));
 
 function randomize(word) {
-    if (word == "startingWord"){
-        document.getElementById("endingWord").innerHTML = "Ending Word";
-    }
 
     disableBtns();
     if (i < 3) {
