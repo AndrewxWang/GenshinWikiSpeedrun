@@ -4,7 +4,8 @@ body {
     min-width: 100%;
     background-repeat: no-repeat;
     background-size: 100%;
-    background-attachment: scroll;
+    background-attachment: fixed;
+    background-position: 0%;
     touch-action: none;
     width: 100%;
     z-index: 0;
@@ -14,29 +15,16 @@ body {
     font-family: 'genshin';
     font-size: 2.5vh;
     overflow: hidden;
-
+    transition: 0.1s all;
     text-align: center;
     top: 0;
-}
-
-a {
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    position: relative;
-    transition: 0.1s all;
-    visibility: hidden;
-}
-
-a:hover {
-    color: #aea5ff;
-    text-decoration: underline;
 }
 
 button {
     border: none;
     background-color: lightgray;
     border-bottom: 0.5vh solid #28223d;
+    color: black;
     transition: all .05s;
 }
 
@@ -46,6 +34,16 @@ button:hover {
     transform: scale(1.015);
 }
 
+button:disabled {
+    color: grey;
+}
+
+button:disabled:hover {
+    background-color: lightgray;
+    cursor: default;
+    transform: scale(1);
+}
+
 h1 {
     font-size: 3.5vh;
     font-weight: lighter;
@@ -53,9 +51,18 @@ h1 {
     margin-left: 4.5vh;
 }
 
-p {
+a {
+    color: white;
     display: block;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
     text-align: center;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(181, 171, 255);
+    cursor: pointer;
 }
 
 #btnDiv {

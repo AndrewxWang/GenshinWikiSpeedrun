@@ -4,9 +4,8 @@ var j = 0;
 var randomNum = Math.floor(Math.random() * (list.length - 1));
 
 function randomize(word) {
-    if (word == "startingWord") {
-        document.getElementById("startingLink").innerHTML = "&nbsp";
-        document.getElementById("startingLink").style.visibility= "visible";
+    if (word == "startingWord"){
+        document.getElementById("endingWord").innerHTML = "Ending Word";
     }
 
     disableBtns();
@@ -25,7 +24,6 @@ function randomize(word) {
     } else {
         var randomWord = list[randomNum];
         document.getElementById(word).innerHTML = randomWord;
-        document.getElementById("startingLink").style.visibility= "visible";
 
         //reset
         i = 0;
@@ -33,10 +31,8 @@ function randomize(word) {
         randomNum = Math.floor(Math.random() * (list.length - 1));
         enableBtns();
 
-        if (word == "startingWord"){
-            document.getElementById("startingLink").innerHTML = "Link to start";
-            document.getElementById("startingLink").setAttribute("href", "https://genshin-impact.fandom.com/wiki/" + randomWord);
-        }
+        document.getElementById(word).innerHTML = randomWord;
+        document.getElementById(word).setAttribute("href", "https://genshin-impact.fandom.com/wiki/" + randomWord);
     }
 }
 
